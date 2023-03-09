@@ -15,6 +15,7 @@ public class AppConfig {
 
     @Bean
     @Scope(BeanDefinition.SCOPE_PROTOTYPE)
+//    @Scope("prototype")
     public Cat getCat() {
         Cat cal = new Cat();
         cal.setMessage("I'm a message from Cal.class");
